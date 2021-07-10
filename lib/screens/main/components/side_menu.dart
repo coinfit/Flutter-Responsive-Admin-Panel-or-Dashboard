@@ -55,17 +55,6 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_setting.svg",
             press: () {},
           ),
-          DrawerListTile(
-            title: "Sign in Test",
-            svgSrc: "assets/icons/menu_setting.svg",
-            press: () {
-              Navigator.of(context).push(new MaterialPageRoute<Null>(
-                  builder: (BuildContext context) {
-                    return new LoginScreen();
-                  },
-                  fullscreenDialog: true));
-            },
-          ),
         ],
       ),
     );
