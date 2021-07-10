@@ -15,38 +15,38 @@ class SideMenu extends StatelessWidget {
             child: Image.asset("assets/images/logo.png"),
           ),
           DrawerListTile(
-            title: "Dashbord",
+            title: "Dashboard",
             svgSrc: "assets/icons/menu_dashbord.svg",
             press: () {},
           ),
           DrawerListTile(
-            title: "Transaction",
+            title: "Teams",
+            svgSrc: "assets/icons/menu_profile.svg",
+            press: () {},
+          ),
+          DrawerListTile(
+            title: "Students",
             svgSrc: "assets/icons/menu_tran.svg",
             press: () {},
           ),
           DrawerListTile(
-            title: "Task",
+            title: "Workouts",
             svgSrc: "assets/icons/menu_task.svg",
             press: () {},
           ),
           DrawerListTile(
-            title: "Documents",
+            title: "Health Survey",
             svgSrc: "assets/icons/menu_doc.svg",
             press: () {},
           ),
           DrawerListTile(
-            title: "Store",
+            title: "Announcements",
             svgSrc: "assets/icons/menu_store.svg",
             press: () {},
           ),
           DrawerListTile(
-            title: "Notification",
+            title: "Chats",
             svgSrc: "assets/icons/menu_notification.svg",
-            press: () {},
-          ),
-          DrawerListTile(
-            title: "Profile",
-            svgSrc: "assets/icons/menu_profile.svg",
             press: () {},
           ),
           DrawerListTile(
