@@ -1,3 +1,5 @@
+import 'package:admin/screens/dashboard/test.dart';
+import 'package:admin/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -53,6 +55,17 @@ class SideMenu extends StatelessWidget {
             title: "Settings",
             svgSrc: "assets/icons/menu_setting.svg",
             press: () {},
+          ),
+          DrawerListTile(
+            title: "Sign in Test",
+            svgSrc: "assets/icons/menu_setting.svg",
+            press: () {
+              Navigator.of(context).push(new MaterialPageRoute<Null>(
+                  builder: (BuildContext context) {
+                    return new LoginScreen();
+                  },
+                  fullscreenDialog: true));
+            },
           ),
         ],
       ),
