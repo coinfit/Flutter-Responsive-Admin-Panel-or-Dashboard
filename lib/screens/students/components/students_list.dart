@@ -70,7 +70,7 @@ DataRow studentsListDataRow(RecentFile fileInfo) {
                   Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Expanded(
+                  Flexible(
                     child: Text(
                       fileInfo.title!,
                       overflow: TextOverflow.ellipsis,
