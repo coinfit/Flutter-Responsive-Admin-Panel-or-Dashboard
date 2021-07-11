@@ -65,12 +65,18 @@ DataRow studentsListDataRow(RecentFile fileInfo) {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Flexible(
-                //! known issue: textoverflow when mobile screen
-                child: Text(
-                  fileInfo.title!,
-                  overflow: TextOverflow.visible,
-                ),
+              child:
+                  //! known issue: textoverflow when mobile screen
+                  Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Text(
+                      fileInfo.title!,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
@@ -80,7 +86,11 @@ DataRow studentsListDataRow(RecentFile fileInfo) {
       DataCell(Text(fileInfo.date!)),
       //this is attendance column
       DataCell(Text(fileInfo.size!)),
-      DataCell(Icon(Icons.message)),
+      DataCell(GestureDetector(
+          onTap: () {
+            print("[DEV] message button tapped");
+          },
+          child: Icon(Icons.message))),
     ],
   );
 }
