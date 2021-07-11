@@ -1,8 +1,4 @@
 import 'package:admin/responsive.dart';
-import 'package:admin/screens/dashboard/components/header.dart';
-import 'package:admin/screens/dashboard/components/my_fields.dart';
-import 'package:admin/screens/dashboard/components/recent_files.dart';
-import 'package:admin/screens/dashboard/components/storage_details.dart';
 import 'package:admin/screens/students/components/students_header.dart';
 import 'package:admin/screens/students/components/students_list.dart';
 import 'package:flutter/material.dart';
